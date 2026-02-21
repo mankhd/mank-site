@@ -1,1 +1,1 @@
-# mank-site.site
+# mank-site
