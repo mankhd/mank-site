@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mank</title>
+  <link rel="icon" href="imgs/favicon.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/5f61ca79dc.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="preload">
+  <div class="aurora-bg">
+    <div class="aurora-effect"></div>
+  </div>
+
+  <header class="navbar">
+    <h1 class="title aurora-text">Mank</h1>
+    <div class="language-switcher">
+      <button class="hamburger-btn" id="langBtn" onclick="toggleLangMenu()">🇮🇩 🌐</button>
+      <div class="lang-menu" id="langMenu">
+        <button onclick="switchLanguage('id')">🇮🇩 Indonesia</button>
+        <button onclick="switchLanguage('en')">🇬🇧 English</button>
+        <button onclick="switchLanguage('mn')">🥥 Minang</button>
+        <button onclick="switchLanguage('my')">🌺 Melayu</button>
+        <button onclick="switchLanguage('jw')">🦜 Jawa</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container fade">
+      <!-- Games Section -->
+    <section class="section">
+      <div class="section-title"><i class="fa-solid fa-gamepad"></i> <span data-translate="gamesIPlay">Aku Main</span></div>
+      <div class="cards">
+        <a class="card" href="https://www.roblox.com/" target="_blank">
+           <img src="imgs/roblox.svg" alt="Roblox" height="36">
+          <div class="card-info">
+            <div class="card-title">Roblox</div>
+            <div class="card-subtitle">mankhade</div>
+          </div>
+        </a>
+        <div class="card">
+          <img src="imgs/stumbleguys.svg" alt="Stumble Guys" height="23" class="logo-fix">
+          <div class="card-info">
+            <div class="card-title">Stumble Guys</div>
+            <div class="card-subtitle">ELz|Mank</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marketplace Section -->
+    <section class="section">
+      <div class="section-title"><i class="fa-solid fa-bag-shopping"></i> <span data-translate="iSell">Aku Jual</span></div>
+      <div class="cards">
+        <a class="card marketplace" href="https://discord.gg/haphap" target="_blank">
+          <img src="imgs/logotoko.png" alt="backdoor" height="36" class="logo-fix">
+          <div class="card-info">
+            <div class="card-title">Backdoor Marketplace</div>
+            <div class="card-subtitle">discord.gg/haphap</div>
+          </div>
+        </a>
+        <a class="card catalog" href="https://media.discordapp.net/attachments/1015955350408675391/1471513552257814641/backdoor_product_list.png?ex=6999c14a&is=69986fca&hm=238d8abc67e52df813e52e867354e072a5f42d237199d49fc20da9c262067e51&=&format=webp&quality=lossless&width=540&height=960" target="_blank">
+          <img src="imgs/keranjang.png" alt="keranjang" height="36">
+          <div class="card-info">
+            <div class="card-title">Catalog Backdoor</div>
+            <div class="card-subtitle">Product List</div>
+          </div>
+        </a>
+      </div>
+    </section>
+	
+    <!-- Support Section -->
+    <section class="section">
+      <div class="section-title"><i class="fa-solid fa-hand-holding-heart"></i> <span data-translate="donation">Dukung Aku</span></div>
+      <div class="cards">
+        <a class="card saweria" href="https://saweria.co/manks" target="_blank">
+          <i class="fa-solid fa-dollar-sign text-orange"></i>
+          <div class="card-info">
+            <div class="card-title">Saweria</div>
+            <div class="card-subtitle">manks</div>
+          </div>
+        </a>
+        <a class="card sociabuzz" href="https://sociabuzz.com/mankhd/donate" target="_blank">
+          <i class="fa-solid fa-heart-pulse text-pink"></i>
+          <div class="card-info">
+            <div class="card-title">SociaBuzz</div>
+            <div class="card-subtitle">MankHD</div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Find Me Section -->
+    <section class="section">
+      <div class="section-title"><i class="fa-solid fa-share-nodes"></i> <span data-translate="findMe">Cari Aku</span></div>
+      <div class="cards">
+        <a class="card discord" href="https://discord.gg/stumbleguysid" target="_blank">
+          <i class="fa-brands fa-discord text-indigo"></i>
+          <div class="card-info">
+            <div class="card-title">Discord</div>
+            <div class="card-subtitle">mnk</div>
+          </div>
+        </a>
+        <a class="card spotify" href="https://open.spotify.com/user/313mbibfxncafuknwthj4b5mwrem" target="_blank">
+          <i class="fa-brands fa-spotify text-green"></i>
+          <div class="card-info">
+            <div class="card-title">Spotify</div>
+            <div class="card-subtitle">Mank</div>
+          </div>
+        </a>
+        <a class="card youtube" href="https://youtube.com/@manghd" target="_blank">
+          <i class="fa-brands fa-youtube text-red"></i>
+          <div class="card-info">
+            <div class="card-title">YouTube</div>
+            <div class="card-subtitle">manghd</div>
+          </div>
+        </a>
+        <a class="card github" href="https://github.com/mankhd" target="_blank">
+          <i class="fa-brands fa-github text-white"></i>
+          <div class="card-info">
+            <div class="card-title">GitHub</div>
+            <div class="card-subtitle">mankhd</div>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
